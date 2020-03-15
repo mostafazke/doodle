@@ -1,30 +1,29 @@
-# node-react-starter
-A simple fullstack starter application using Node.js, Express.js, React.js and MongoDB
+# Doodle
 
-To run this project you need to add the backend and frontend dependencies.
-In the root of the project run the following command
+Doodle is a web application.
 
-```
-$ npm install
-```
+This project was built with express - mongodb.
 
-Then, navigate to the client directory and run the following command:
+## Prerequisites
 
-```
-recommended
-$ yarn
-```
-or
-```
-npm install
-```
+- nodejs installed
+- A working version of mongodb and database called "doodle"
 
-### Running the application
+## Available Scripts
 
-*To run this application, you must have MongoDB up and running*
+In the project directory, you can run:
 
-To run the application, use the following command:
+### `npm start`
 
-```
-$ npm run dev
-```
+Runs the app in the development mode.
+Open [http://localhost:5000](http://localhost:5000).
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
