@@ -1,6 +1,6 @@
 # Doodle
 
-Doodle is a web application.
+Doodle is a web application that retrive data from google doodle service.
 
 This project was built with express - mongodb.
 
