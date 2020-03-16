@@ -26,12 +26,13 @@ module.exports = async (req, res) => {
           }
         });
       });
-      return data;
+      return;
     }
     return;
+  } else {
+    const data = await getNewData(req.params.year, req.params.month);
+    return res.send(data);
   }
-  const data = await getNewData(req.params.year, req.params.month);
-  return res.send(data);
 };
 
 const getNewData = async (year, month) => {
@@ -46,9 +47,7 @@ const getNewData = async (year, month) => {
         ...element
       });
       await doodle.save(err => {
-        if (err) {
-          return res.send(err);
-        }
+        if (err) return err;
       });
     });
     doodles = await Doodle.find({
